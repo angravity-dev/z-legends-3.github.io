@@ -9,7 +9,7 @@ html {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.7;
+  line-height: 1.8;
   color: #1f2937;
   background: #f8fafc;
 }
@@ -32,12 +32,15 @@ a:hover {
 header {
   background: linear-gradient(135deg, #111827, #1e3a8a);
   color: #ffffff;
-  padding: 56px 20px 44px;
+  padding: 40px 16px 30px;
+  text-align: center;
 }
 
 .container {
-  max-width: 980px;
+  width: 100%;
+  max-width: 860px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 .badge {
@@ -47,35 +50,34 @@ header {
   padding: 8px 14px;
   border-radius: 999px;
   font-size: 14px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 h1 {
-  margin: 0 0 14px;
-  font-size: 40px;
-  line-height: 1.2;
+  margin: 0 0 12px;
+  font-size: 36px;
+  line-height: 1.25;
+  word-break: break-word;
 }
 
 .subtitle {
-  max-width: 760px;
+  max-width: 700px;
+  margin: 0 auto;
   font-size: 18px;
-  margin: 0;
   color: #dbeafe;
 }
 
 nav {
   background: #ffffff;
   border-bottom: 1px solid #e5e7eb;
-  position: sticky;
-  top: 0;
-  z-index: 10;
 }
 
 nav .container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 14px;
-  padding: 14px 20px;
+  padding: 14px 16px;
 }
 
 nav a {
@@ -85,52 +87,63 @@ nav a {
 }
 
 main {
-  padding: 32px 20px 60px;
+  padding: 32px 16px 50px;
 }
 
 article {
   background: #ffffff;
   border: 1px solid #e5e7eb;
-  border-radius: 18px;
-  padding: 32px;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+  max-width: 860px;
+  margin: 0 auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 h2 {
-  margin-top: 36px;
+  margin-top: 32px;
   margin-bottom: 12px;
   font-size: 28px;
+  line-height: 1.3;
+  word-break: break-word;
   color: #111827;
 }
 
 h3 {
-  margin-top: 24px;
+  margin-top: 22px;
   margin-bottom: 10px;
   font-size: 22px;
+  line-height: 1.35;
+  word-break: break-word;
   color: #1f2937;
 }
 
 p {
   margin: 0 0 16px;
   font-size: 17px;
+  word-break: break-word;
 }
 
-ul {
-  margin: 0 0 16px 20px;
+ul,
+ol {
+  margin: 0 0 16px 22px;
   padding: 0;
 }
 
 li {
   margin-bottom: 8px;
   font-size: 17px;
+  word-break: break-word;
 }
 
 .info-box {
   background: #eff6ff;
   border: 1px solid #bfdbfe;
   border-radius: 14px;
-  padding: 20px;
-  margin: 24px 0;
+  padding: 18px;
+  margin: 22px 0;
 }
 
 .info-box strong {
@@ -138,23 +151,36 @@ li {
 }
 
 footer {
-  padding: 28px 20px 50px;
+  text-align: center;
+  padding: 24px 16px 40px;
   color: #6b7280;
   font-size: 14px;
-  text-align: center;
 }
 
 @media (max-width: 768px) {
+  header {
+    padding: 32px 14px 24px;
+  }
+
+  .container {
+    padding: 0 14px;
+  }
+
   h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .subtitle {
     font-size: 16px;
   }
 
+  main {
+    padding: 24px 14px 40px;
+  }
+
   article {
-    padding: 22px;
+    padding: 20px 16px;
+    border-radius: 14px;
   }
 
   h2 {
